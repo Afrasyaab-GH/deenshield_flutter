@@ -1,0 +1,133 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Windows related
+windows/flutter/ephemeral/
+*.orig
+
+# ========================================
+# CRITICAL: PROTECT SOURCE CODE
+# ========================================
+# Ensure NO source code is ever committed to public repo
+
+# Flutter source files
+lib/**
+!lib/.gitkeep
+
+# Dart source files
+test/**
+!test/.gitkeep
+
+# Build scripts and configuration
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+
+# Development documentation (private)
+IMPLEMENTATION_SUMMARY.md
+MIGRATION_GUIDE.md
+EXTENSION_INTEGRATION_STRATEGY.md
+DASHBOARD_FEATURES.md
+INSTALLER_SETUP_COMPLETE.md
+RELEASE_READY_v0.1.0.md
+INSTALLATION_GUIDE_v0.1.0.md
+QUICKSTART.md
+
+# Build and compilation files
+!build/.gitkeep
+
+# Windows build artifacts
+windows/**
+!windows/.gitkeep
+
+# Assets (icons/images contain branding - keep private for now)
+assets/**
+!assets/.gitkeep
+
+# Scripts
+*.ps1
+*.bat
+!scripts/.gitkeep
+
+# Installer source
+installer/**
+!installer/.gitkeep
+
+# ========================================
+# ALLOW: Public Documentation & Releases
+# ========================================
+# These are safe for public consumption
+
+# Documentation
+!docs/
+!docs/**
+
+# README for GitHub
+!README.md
+
+# License files
+!LICENSE
+!LICENSE.md
+
+# Placeholder files
+!.gitkeep
+
+# ========================================
+# Environment & Secrets
+# ========================================
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials/
+
+# ========================================
+# Testing & Debugging
+# ========================================
+coverage/
+*.coverage
+.test_results/
+debug/
+*.log
